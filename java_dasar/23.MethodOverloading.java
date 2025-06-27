@@ -1,12 +1,14 @@
 public class MethodOverloading {
     public static void main(String[] args) {
-
+        sayHello();
+        sayHello("hoshimi");
+        sayHello("hoshimi","miyabi");
     }
     static void sayHello(){
         System.out.println("hello");
     }
     static  void  sayHello(String name){
-        System.out.println("hello" + name);
+        System.out.println("hello " + name);
     }
     static void  sayHello(String name, String lastName){
         System.out.println("welcome " + name + " " + lastName);
