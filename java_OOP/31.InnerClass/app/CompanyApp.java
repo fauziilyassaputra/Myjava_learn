@@ -1,39 +1,19 @@
-package hollow.special.operation.data;
+package hollow.special.operation.app;
 
-public class Company {
+import hollow.special.operation.data.Company;
 
-    private String name;
+public class CompanyApp {
+    public static void main(String[] args) {
 
-    public String getName() {
-        return name;
-    }
+        Company company = new Company();
+        company.setName("hollow special operation");
 
-    public void setName(String name) {
-        this.name = name;
-    }
+        // cara menggunakan innerclass
+        Company.Employee employee = company.new Employee();
+        employee.setName("shoukaku");
 
-    public class Employee {
-        private String name;
-
-        //mengambil field  name di company tanpa harus membuat ulang dan bisa mengambil field privatenya
-        public String getCompany(){
-            return Company.this.name;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
+        // memanggil name company di class employee
+        System.out.println(employee.getName());
+        System.out.println(employee.getCompany());
     }
 }
-
-/*
-Inner Class :
-- dijava, kita bisa membuat class di dalam class, atau disebut sebagai inner class
-- salah satu kasus kita membuat innerclass biasanya ketika kita butuh membuat beberapa class yang saling berhubungan, dimana sebuah class tidak bisa dibuat tanpa class lain
-- misal kita perlu membuat class employee, dimana membutuhkan class company, maka kita bisa membuat class employee sebagai innerclass company
-- cara membuat innerclass, cukup membuatnya di dalam block class outer classnya
- */
