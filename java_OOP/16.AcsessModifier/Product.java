@@ -3,7 +3,7 @@ package hollow.special.operation.data;
 // mana main class harus sama dengan nama filenya
 public class Product {
 
-//  jika fieldnya dalah private, maka tidak bisa dipanggil di file ProductApp
+//  jika fieldnya adalah private, maka tidak bisa dipanggil di file ProductApp
 
 //    private String name;
 //    private int price;
