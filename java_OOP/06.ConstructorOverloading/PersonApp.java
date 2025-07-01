@@ -1,35 +1,16 @@
-public class Person {
-        //field
-        String name;
-        String address;
-        final String country = "indonesia";
+public class PersonApp {
+    public static void main(String[] args) {
 
-        //Constructor overloading
-        Person(String paramName, String paramAddress){
-                name = paramName;
-                address =  paramAddress;
-        }
-
-//        Person(String paramname){
-//                name = paramname;
-//        }
-        // dari pada membuat constructor yang sama dengan kodingannya, lebih baik kita memanggil constructor sebelumnya
-        Person(String paramName){
-                this(paramName, null);
-        }
+        // memanggil constructor overloading
+        var person1 = new Person("Hoshimi", "HSO");
+        System.out.println(person1.name);
 
 
-//        Person(){
-//
-//        }
-        Person(){
-                this(null);
-        }
+        //memanggil method sayHello (yang shadowing)
+        person1.sayHello("shoukaku");
+        // output :  hello shoukaku my name is Hoshimi
 
-        //method
-        void sayHello(String paramName){
-                System.out.println("hello " + paramName + " my name is " + name);
-        }
 
+    }
 }
 
