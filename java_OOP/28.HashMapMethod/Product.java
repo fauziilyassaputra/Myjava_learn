@@ -39,7 +39,8 @@ public class Product {
 
 /*
 hashCode method :
-- method hashcode adalah method representasi integer object kita, mirip toString yang merupakan representasi String, hashCOde adalah representasi integer
+- method hashcode adalah method representasi integer object kita, mirip toString yang merupakan representasi String,
+  hashCode adalah representasi integer
 - Hashcode sangat bermanfaat untuk membuat struktur data unique seperti hahsmap, set, dan lain-lain, karena
 cukup menggunakan hashCode method untuk mendapatkan identitas unique object kita
 - secara default hashCode akan mengembalikan nilai integer sesuai data di memory, namun kita bisa mengoverridenya jika kita ingin
