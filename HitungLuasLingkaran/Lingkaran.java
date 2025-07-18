@@ -8,7 +8,7 @@ public class Lingkaran {
     }
 
     public double LuasLingkaran(){
-        return jari * 3.14 ;
+        return  3.14 * jari * jari ;
     }
 
 }
